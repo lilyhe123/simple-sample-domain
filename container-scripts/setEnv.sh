@@ -1,4 +1,4 @@
-#!/bin/bash ex
+#!/bin/bash 
 
 # Copyright (c) 2018, 2019 Oracle and/or its affiliates. All rights reserved.
 # The Universal Permissive License (UPL), Version 1.0
@@ -8,6 +8,7 @@
 # create domain step is the input to this script. This insures that the values persisted
 # as environment variables in the docker image match the configured domain home.
 
+set -exu
 BUILD_ARG=''
 if [ "$#" -eq  "0" ]; then
     echo "A properties file with variable definitions should be supplied."
